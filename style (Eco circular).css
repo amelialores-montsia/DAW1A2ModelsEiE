@@ -1,0 +1,303 @@
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f8f1;
+            color: #38262d;
+            line-height: 1.6;
+        }
+
+        /* CAPÇALERA: TÍTOL A DALT I ENLLAÇOS A SOTA */
+        header {
+            background-color: #eb4688;
+            color: rgb(39, 39, 40);
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .logo svg {
+            width: 60px;
+            height: 60px;
+        }
+
+        .logo h1 {
+            font-size: 30px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #39794b;
+        }
+
+        /* INTRODUCCIÓ */
+        .introduccio {
+            text-align: center;
+            padding: 45px 20px;
+            background: linear-gradient(135deg, #dff0d8, #f4f8f1);
+        }
+
+        .introduccio h2 {
+            color: #1e5631;
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        .introduccio p {
+            max-width: 750px;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+
+        /* CONTINGUT PRINCIPAL */
+        main {
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .seccio {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            margin: 35px 0;
+            padding: 25px;
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 14px rgba(31, 75, 43, 0.10);
+        }
+
+        .seccio img {
+            width: 45%;
+            min-height: 260px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .text {
+            flex: 1;
+        }
+
+        .text h2 {
+            color: #267343;
+            font-size: 27px;
+            margin-bottom: 15px;
+        }
+
+        .text p {
+            margin-bottom: 12px;
+        }
+
+        .text ul {
+            padding-left: 22px;
+        }
+
+        .text li {
+            margin-bottom: 8px;
+        }
+
+        /* FOOTER ECO CIRCULAR */
+        .footer {
+            background-color: #244b35;
+            color: #f5f3e8;
+            font-family: Arial, sans-serif;
+            margin-top: 60px;
+            border-top: 5px solid #a8bd85;
+        }
+
+        .footer-contenidor {
+            max-width: 1200px;
+            margin: auto;
+            padding: 45px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-logo {
+            font-size: 27px;
+            font-weight: bold;
+            line-height: 1.1;
+            color: #ffffff;
+            min-width: 145px;
+        }
+
+        .footer-logo .fulla {
+            color: #b9d49a;
+            font-size: 35px;
+        }
+
+        .footer-logo small {
+            display: block;
+            font-size: 10px;
+            font-weight: normal;
+            letter-spacing: 2px;
+            color: #d2dfc1;
+            margin-top: 10px;
+        }
+
+        .footer-columna {
+            border-left: 1px solid #718c70;
+            padding-left: 22px;
+            min-height: 85px;
+        }
+
+        .footer-columna h3,
+        .footer-formulari h3 {
+            font-size: 15px;
+            color: #c7d9a9;
+            margin: 0 0 12px;
+        }
+
+        .footer-columna p,
+        .footer-columna a {
+            font-size: 12px;
+            line-height: 1.9;
+            color: #f5f3e8;
+            text-decoration: none;
+            margin: 0;
+        }
+
+        .footer-columna a:hover {
+            color: #c7d9a9;
+        }
+
+        /* SUBSCRIPCIÓ */
+        .footer-formulari input {
+            width: 180px;
+            max-width: 100%;
+            padding: 11px;
+            border: 1px solid #d5dfc8;
+            border-radius: 5px;
+            background-color: #f5f3e8;
+            color: #244b35;
+            outline: none;
+        }
+
+        .footer-formulari button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #b9d49a;
+            color: #244b35;
+            font-weight: bold;
+            font-size: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .footer-formulari button:hover {
+            background-color: #e0ebcf;
+            transform: translateY(-2px);
+        }
+
+        /* ENLLAÇOS INFERIORS */
+        .footer-inferior {
+            background-color: #193a28;
+            text-align: center;
+            padding: 17px 10px;
+        }
+
+        .footer-inferior a {
+            color: #e1e8d8;
+            text-decoration: none;
+            font-size: 12px;
+            margin: 0 12px;
+            transition: 0.3s;
+        }
+
+        .footer-inferior a:hover {
+            color: #b9d49a;
+        }
+
+        /* COPYRIGHT */
+        .footer-copy {
+            background-color: #142f21;
+            text-align: center;
+            padding: 14px;
+            font-size: 11px;
+            color: #c8d5c0;
+        }
+
+        /* MÒBILS */
+        @media (max-width: 750px) {
+            .logo h1 {
+                font-size: 23px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+
+            .introduccio h2 {
+                font-size: 28px;
+            }
+
+            .seccio {
+                flex-direction: column;
+                padding: 18px;
+            }
+
+            .seccio img {
+                width: 100%;
+                min-height: 200px;
+                max-height: 320px;
+            }
+
+            .text h2 {
+                font-size: 23px;
+            }
+
+            .footer-contenidor {
+                justify-content: flex-start;
+                padding: 35px 25px;
+                gap: 30px;
+            }
+
+            .footer-logo,
+            .footer-columna,
+            .footer-formulari {
+                width: 100%;
+            }
+
+            .footer-columna {
+                box-sizing: border-box;
+            }
+
+            .footer-inferior a {
+                display: inline-block;
+                margin: 8px;
+            }
+        }
