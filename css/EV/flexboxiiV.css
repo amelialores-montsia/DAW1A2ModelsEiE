@@ -1,0 +1,23 @@
+/* Quita los puntos por defecto de la lista */
+.cards-grid .card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Alinea cada fila */
+.cards-grid .card ul li {
+    display: flex;
+    align-items: center;    
+    gap: 18px;              
+    margin-bottom: 16px;    
+}
+
+/* Aumenta las medidas de la imagen */
+.cards-grid .card ul li img {
+    width: 120px;           
+    height: 90px;           
+    object-fit: cover;      
+    border-radius: 8px;     
+    flex-shrink: 0;         
+}

@@ -1,0 +1,29 @@
+
+/* Objectius i Beneficis */
+
+.dosarticles {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dosarticles article {
+    width: 40%;
+}
+
+/* Exemples i eines */
+
+.exemples {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.exemples img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 10px;
+}

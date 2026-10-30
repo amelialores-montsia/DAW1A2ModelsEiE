@@ -1,0 +1,15 @@
+.flexindex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.flexindex .caixa {
+    width: 30%;
+}
+
+.flexindex img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}

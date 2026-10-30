@@ -1,0 +1,74 @@
+
+/* Títols principals */
+h1 {
+    color: darkgreen;
+    font-family: Arial;
+    text-align: center;
+}
+
+/* Títols secundaris */
+h2 {
+    color: green;
+    font-family: Arial;
+}
+
+/* Títols petits */
+h3 {
+    color: seagreen;
+    font-family: Arial;
+}
+
+/* Paràgrafs */
+p {
+    color: #333333;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Text en negreta */
+b {
+    color: darkgreen;
+}
+
+/* Enllaços del menú */
+nav a {
+    color: green;
+    text-decoration: none;
+}
+
+/* Peu de pàgina */
+footer {
+    text-align: center;
+}
+
+
+/* Menú de navegació */
+nav {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Enllaços del menú */
+nav a {
+    margin: 15px;
+    color: green;
+    text-decoration: none;
+}
+
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+body {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+header {
+    text-align: center;
+}
