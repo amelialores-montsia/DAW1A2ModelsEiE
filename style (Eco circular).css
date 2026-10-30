@@ -57,7 +57,7 @@
         }
 
         /* INTRODUCCIÓ */
-        .introduccio {
+        #introduccio {
             text-align: center;
             padding: 45px 20px;
             background: linear-gradient(135deg, #dff0d8, #f4f8f1);
