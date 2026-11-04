@@ -1,67 +1,238 @@
+
 <!DOCTYPE html>
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Sostenibilitat - Models Econòmics i Estratègics</title>
 
+    <link href="https://fonts.googleapis.com/economia-linial-css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./economia-linial-css/text.css">
+    <link rel="stylesheet" href="./economia-linial-css/taula_llista.css">
+    <link rel="stylesheet" href="./economia-linial-css/flexbox.css">
+    <title>L'economia lineal</title>
 </head>
 <body>
 
     <header>
-        <h1>Portal de Sostenibilitat</h1>
-        <p>Models Econòmics i Estratègics</p>
+        <nav class="navbar">
+            <img class="navbar-logo" src="./economia-linial-media/obsolescencia-media/svg/logo.svg">
+            <ul class="navbar-links">
+                <li><a href="Economia lineal">Economia lineal</a></li>
+                <li><a href="Extreure-Produir-Llençar">Extreure-Produir-Llençar</a></li>
+                <li><a href="Obsolescència programada">Obsolescència programada</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section>
-            
-            <!-- Subbranca 1: Economia Lineal -->
-            <article>
-                <h2>Economia Linial</h2>
-                <ul>
-                    <li><a href="models-de-negoci.html">Disseny de negocis</a></li>
-                    <li><a href="cicle-de-vida.html">Cicle de vida de producte</a></li>
-                    <li><a href="recuperacio-recursos.html">Recuperació de recursos</a></li>
-                </ul>
-            </artic>
-
-            <!-- Subbranca 2: Economia Circular -->
-            <article>
-                <h2>Economia Circular</h2>
-                <ul>
-                    <li><a href="sostenibilitat-marina.html">Sostenibilitat marina</a></li>
-                    <li><a href="recursos-oceanics.html">Recursos oceànics</a></li>
-                    <li><a href="mitigacio-impacte.html">Mitigació d'impacte</a></li>
-                </ul>
-            </article>
-
-            <!-- Subbranca 3: Economia Verda -->
-            <article>
-                <h2>Economia Verda</h2>
-                <ul>
-                    <li><a href="indexv.html">Index Economia Verda</a></li>
-                    <li><a href="tegnologies.html">Tecnologies Netes</a></li>
-                    <li><a href="energies.html">Energies renovables</a></li>
-                    <li><a href="impacte.html">Baix impacte ambiental</a></li>
-                </ul>
-            </article>
-
-            <!-- Subbranca 4: Ecodisseny -->
-            <article>
-                <h2>Ecodisseny</h2>
-                <ul>
-                    <li><a href="reduccio-consum.html">Reducció del consum</a></li>
-                    <li><a href="models-sostenibles.html">Models sostenibles</a></li>
-                    <li><a href="justicia-social.html">Justícia social</a></li>
-                </ul>
-            </article>
-
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Obsolescència programada</h1>
+                <h5>by Alexandra Aixendri</h5>
+            </div>
+            <div class="hero-img">
+                <img src="./economia-linial-media/obsolescencia-media/img/Cover.jpg">
+            </div>
         </section>
+        <section>
+            <article>
+                <blockquote>“Els productes que comprem podrien durar per a sempre, però no ho fan.”</blockquote>
+                <p>Estació de Bombers número 6 de Livermore, EE UU. Aquí hi ha una bombeta de llum que porta funcionant sense pausa des del 1901, la <i>Centennial Light</i> <a href="https://www.centennialbulb.org/cam.htm">(aquí es pot veure en directe).</a></p>
+                <p>El límit biològic d’edat per als éssers humans és d’uns 120 anys. Tenint en compte això, podem afirmar que si tots els productes duressin tant com aquesta bombeta, només hauríem de comprar un producte de cada tipus en tota la nostra vida, però com tots sabem, aquest no és el cas.</p>
+                <video class="my-3" src="./economia-linial-media/obsolescencia-media/video/videoplayback.mp4" type="video/mp4" controls></video>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3>És aquesta bombeta especial d’alguna forma?</h3>
+
+                <p>No. <mark>L’únic especial és que es va produir abans del 1924.</mark></p>
+                <p>Fa 102 anys, a Ginebra, Suïssa, va tenir lloc una reunió secreta que canviaria la història de la economia per sempre: <i>El Càrtel de Phoebus.</i> </p> 
+                <p>En aquesta, els directors executius de les empreses de bombetes més importants del món van acordar cooperar entre elles per regular l’oferta mundial de bombetes fent-les pitjor a posta.</p>
+                <p>Abans les bombetes tenien 2000 h de duració i n’hi havien que arribaven a les 3000. Actualment l’estàndard continua essent el fixat en aquell acord: 1000 h.</p>
+
+                <p><strong><mark>I la companyia que no cumplís l’acord era multada.</mark></strong></p>
+                    
+                <table class="txt-center">
+                    <tr>
+                        <td><img src="./economia-linial-media/obsolescencia-media/img/Abans_phoebus.jpg" /></td>
+                        <td><img src="./economia-linial-media/obsolescencia-media/img/Phoebus1.jpg" /></td>
+                        <td><img src="./economia-linial-media/obsolescencia-media/img/Despres_phoebus.jpg" /></td>
+                    </tr>
+                    <tr>
+                        <td><i>Abans del Càrtel de Phoebus</i></td>
+                        <td> (1924) </td>
+                        <td><i>Després del Càrtel de Phoebus</i></td>
+                    </tr>
+                </table>
+
+                <p>Època actual, 2003, <a href="https://www.youtube.com/watch?v=SuTcavAzopg"> el curtmetratge iPod’s Dirty Secret</a> (el brut secret de iPod) revela per primer cop una queixa relacionada amb l’Obsolescència Programada.</p> 
+
+                <p>Resulta ser que la bateria irreemplaçable dels iPods fallava, de forma precisa 18 mesos després de la seva compra. Per a llavors, el producte ja no comptava amb la garantia i la suggerència dels tècnics era “comprar-ne un de nou, perquè reparar l’antic era més car”. </p>
+                
+                <figure class="my-3">
+                    <video src="./economia-linial-media/obsolescencia-media/video/iPod's Dirty Secret - from 2003.mp4" type="video/mp4" controls></video>
+                    <figcaption>Aquesta queixa, <i>viral abans del naixement de les grans plataformes com YouTube</i> va impulsar una denúncia col·lectiva contra Apple per Obsolescència Programada. </figcaption>
+                </figure>
+                                <!-- By default, <aside> has minimal browser styling. Without custom CSS, you won't see borders, backgrounds, or spacing around it.
+                    
+                    To make it visible during development:
+
+                    aside {
+                    border: 1px solid red;
+                    padding: 1em;
+                    background-color: #f5f5f5;
+                    }
+                    
+                     If you're using Flexbox or Grid on the parent, the <aside> might behave differently than expected:
+
+                        In a flex container, it becomes a flex item (may shrink/grow)
+                        In grid, column widths affect it
+                        float or position on siblings can push it unexpectedly
+                        3. Semantic vs Visual Behavior The <aside> element is purely semantic – it tells browsers/search engines this is "aside content" but doesn't change layout by itself.
+
+                    -->
+
+
+
+                <p>Però aquest no va ser l’únic cas que va afectar Apple, perquè un temps després va tornar a tenir problemes amb la llei per la mateixa pràctica, ja que resulta que el 2017, una actualització de iOS va provocar que els usuaris dels iPhones més antics tinguéssin aplicacions que anaven molt més lentes d’un dia per a l’altre o directament, s’apagués el dispositiu sense motiu.</p>
+                
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3>Definició del problema:</h3>
+           
+                <p>L'<b>obsolescència programada</b> és una estratègia pròpia del model d'<b>economia lineal</b> que fomenta el <b>consumisme</b>, dissenyant productes d’una forma en la que aquests tenen una vida útil <b>escurçada/limitada artificialment</b> o amb un disseny que no prioritza/permet la reparabilitat ni l'actualització, fomentant: </p>
+                
+                <table>
+                    <tr>
+                        <th>Cicles de consum accelerats</th> <td>L'obsolescència programada, combinada amb el màrqueting agressiu, fomenta la compra constant i efímera de productes per sobre de les necessitats reals de consum</td>
+                    </tr>
+
+                    <tr>
+                        <th>Acumulació de residus i contaminació</th><td>Com que els productes no es dissenyen per ser reutilitzats, acaben acumulats en abocadors o cremats en incineradores. En el cas de la tecnologia, menys del 20% dels residus electrònics mundialment es reciclen de manera correcta</td>
+                    </tr>
+                </table>
+                <!--Contingut repetit, tria un format, o llista o taula!!!-->
+                <ul>
+                    <li><b>Cicles de consum accelerats:</b> L'obsolescència programada, combinada amb el màrqueting agressiu, fomenta la compra constant i efímera de productes per sobre de les necessitats reals de consum</li>
+                    <li><b>Acumulació de residus i contaminació:</b> Com que els productes no es dissenyen per ser reutilitzats, acaben acumulats en abocadors o cremats en incineradores. En el cas de la tecnologia, menys del 20% dels residus electrònics mundialment es reciclen de manera correcta</li>
+                </ul>
+
+                <div class="cols-2 my-3">
+                    <img src="./economia-linial-media/obsolescencia-media/img/Obsolescencia.jpg" />
+                    <img src="./economia-linial-media/obsolescencia-media/img/Obsolescencia_electronica2.jpg" />
+                </div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3>L’algorisme de l’obsolescència programada</h3>
+                
+                <ol>
+                    <li>Un aparell electrònic d'ús habitual falla.</li>
+                    <li>Quan el portem a reparar, el servei tècnic li diu que resulta més rendible comprar-ne un nou que arreglar-ho. El preu de la mà d'obra, les peces espatllades i el muntatge costen més que adquirir-ne un nou.</li>
+                    <li>L'usuari rebutja el producte avariat i en compra un de nou.</li>    
+                </ol>
+                
+                <img class="bg-light my-3" src="./economia-linial-media/obsolescencia-media/img/obsolescencia-programada.png" />
+
+                <p>Això ocorre en tot  tipus de components digitals (sobretot relacionats amb la informàtica): ordinadors, impressores, les unitats de disc òptic, monitors LCD…</p>
+                
+                <p>L’entorn més habitual de l’obsolescència programada en el seu actual: els components electrònics.</p>
+                
+                <div class="cols-3 my-3">
+                    <img src="./economia-linial-media/obsolescencia-media/img/Obsolescencia percibida.jpg" />
+                    <img src="./economia-linial-media/obsolescencia-media/img/images.jpg" />
+                    <img src="./economia-linial-media/obsolescencia-media/img/Obsolescencia_electronica.jpg" />
+                </div>
+
+
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3>Més enllà de l’electrònica</h3>
+
+                <p>Però l’obsolescència programada només afecta a productes d’electrònica?</p>
+
+                <p><mark><b>NO.</b></mark></p>
+
+                <div class="cols-2 my-3">
+                    <img src="./economia-linial-media/obsolescencia-media/img/Ford_T.jpg" />
+                    <img src="./economia-linial-media/obsolescencia-media/img/Dupont_nylon.jpg" />
+                </div>
+
+                <h4>Obsolescència biològica: la vida té data de caducitat</h4>
+                
+                <p>Companyies com Monsanto an creat llavors genèticament modificades que es tornen estèrils una vegada que han donat la primera o segona collita, les anomenades llavors “Terminator” produïdes mitjançant la tecnologia GURT (acrònim anglès de <i>Grup de Tecnologies de Restricció d'Ús</i>), trobant un rebuig per part d'autoritats i agricultors, per ser un tipus de contracte obligat fent completament dependent als agricultors de l'empresa per a tornar a sembrar, i també pels perills ja que les llavors estèrils en la segona generació podrien contaminar a altres plantes en barrejar-se i la següent generació serien plantes híbrides absolutament estèrils, cosa que podria ser utilitzada com a bioterrorisme.</p>
+                <p><a href="https://informativos.net/1999/monsanto-dejar-de-vender-la-semilla-terminator/">Finalment, l'empresa suposadament NO va comercialitzar aquestes llavors.</a></p>
+
+                <div class="cols-3 my-3">
+                    <img src="./economia-linial-media/obsolescencia-media/img/Plant.jpg" />
+                    <img src="./economia-linial-media/obsolescencia-media/img/planting-a-seed-x-.jpg" />
+                    <img src="./economia-linial-media/obsolescencia-media/img/Engineering-of-crops-and-seed-termination-technology-2-320.png" />
+                </div>
+                
+                <h4>Obsolescència de medicaments: la salut té data de caducitat</h4>
+
+                <p>La majoria de medicaments conté components químics la vida útil dels quals és limitada; no obstant això, <a href="https://www.saludyfarmacos.org/lang/es/boletin-farmacos/boletines/feb201601/80_medicamentos_caducados/">alguns laboratoris redueixen la data de caducitat dels fàrmacs que produeixen </a> amb la finalitat d'obtenir majors guanys en el negoci de la salut, ocasionant que els pacients rebutgen medicaments suposadament caducats per a adquirir altres nous.</p>
+                
+                <img class="my-3" src="./economia-linial-media/obsolescencia-media/img/Obsolescencia-programada-Industria-farmaceutica.jpg" />
+
+                
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3>El fi de l'Obsolescència</h3>
+
+                <p>Llençar béns de consum reparables té un gran impacte ambiental: cada any, només a la Unió Europea es genera l’equivalent a:</p>
+                
+                <ul>
+                    <li>261 milions de tones d’emissions de CO₂</li>
+                    <li>30 milions de tones de recursos consumits</li> 
+                    <li>35 milions de tones de residus</li>    
+                </ul>
+                
+                <p>La pèrdua econòmica dels consumidors que opten per substituir un producte en lloc de reparar-lo és d’uns 12.000 milions d’euros anuals, quan, segons un estudi de la Comissió Europea, el 77 % dels ciutadans de la Unió Europea preferiria reparar un producte abans que comprar-ne un de nou.</p>
+
+                <p>Arrel aquesta situació, a partir del 18 de febrer de 2027, la nova normativa de la Unió Europea (Reglament (UE) 2023/1542) obligarà al fet que els telèfons mòbils i dispositius portàtils venuts a la UE tinguin bateries que els usuaris puguin extreure i substituir fàcilment:</p>
+
+                <table>
+                    <tr>
+                        <th>Fàcil substitució</th> <td>La bateria ha de poder retirar-se usant eines comercialment disponibles (o que el fabricant proporcioni sense cost si requereix alguna específica)</td>
+                    </tr>
+                        <th>Adéu a les coles</th> <td>Queda prohibit l'ús de calor o dissolvents fortes per a desmuntar el dispositiu</td>
+                    <tr>
+                        <th>Sense traves de programari</th> <td>El sistema operatiu no podrà bloquejar, limitar o penalitzar al mòbil si s'instal·la una bateria nova fos d'un servei tècnic oficial</td>
+                    </tr>
+
+                    <tr>
+                        <th>Recanvis garantits</th> <td>Els fabricants estan obligats a vendre bateries de recanvi durant almenys 5 anys després de retirar el model del mercat, a un preu raonable i no discriminatori</td>
+                    </tr>
+                </table>
+
+                <p>En un intent de redirecció cap a una economia més circular.</p>
+
+                <img class="my-3" src="./economia-linial-media/obsolescencia-media/img/images (2).jpg" alt ="">
+                
+            <!--
+              </section>
+            
+            <section id="Obsolescència programada">
+              
+            -->
+        
+            </article>
+        </section>  
+        
     </main>
 
     <footer>
-        <p>&copy; 2026 Portal de Sostenibilitat. Tots els drets reservats.</p>
+        <h4>&copy; 2026 <a href="https://agora.xtec.cat/insmontsia/"> Institut Montsià </a></h4>
+        <p> Creat per<a href="mailto:alexandraaixendri@iesmontsia.org"> Alexandra A.</a></p>
     </footer>
 
 </body>
