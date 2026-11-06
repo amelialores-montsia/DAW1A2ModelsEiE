@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pla de Sostenibilitat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rye&amp;family=Zilla+Slab:wght@500;700&amp;display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="cap">
+      <svg class="logo" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20 4C10 4 4 9 4 15c0 1.6.5 3 1.3 4.2C6.5 13.5 10 10 15 8c-4 3-6.5 6.5-7.3 11.6C9 20.5 10.4 21 12 21c6 0 9-6 8-17z" fill="currentColor"/>
+      </svg>
+      <h1>Pla de Sostenibilitat</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="sectors-fp.html">Sectors d'FP</a></li>
+        <li><a href="pla-sostenibilitat.html" aria-current="page">Pla de Sostenibilitat</a></li>
+        <li>
+          <button id="tema" type="button" aria-label="Canviar entre mode clar i fosc">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg>
+          </button>
+        </li>
+        <li>
+          <button id="so" type="button" aria-label="Activar o silenciar els sons" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><g class="ones"><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 6a9 9 0 0 1 0 12"/></g><path class="barra" d="M16 9l5 6M21 9l-5 6"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Com es construeix un pla de sostenibilitat</h2>
+      <p>
+        Un pla de sostenibilitat comença amb una <strong>diagnosi</strong> de la situació de
+        l'empresa i del seu entorn. Té tres passos principals: saber a qui afecta l'empresa
+        (grups d'interès), decidir què és més important (aspectes materials) i mesurar si
+        les accions funcionen (indicadors de seguiment).
+      </p>
+    </section>
+
+    <section class="targetes passos" aria-label="Fases del pla">
+      <article class="reveal c-p1">
+        <h3>Mapeig de grups d'interès</h3>
+        <p>Cal identificar qui interacciona amb l'empresa i què n'espera:</p>
+        <ul>
+          <li>Clients i consumidors</li>
+          <li>Proveïdors i socis comercials</li>
+          <li>Empleats i col·laboradors</li>
+          <li>Comunitat i societat</li>
+          <li>Inversors i entitats financeres</li>
+        </ul>
+      </article>
+
+      <article class="reveal c-p2">
+        <h3>Determinació d'aspectes materials</h3>
+        <p>Són els aspectes ambientals, socials i de governança (ASG) més rellevants:</p>
+        <ul>
+          <li><strong>Ambiental:</strong> recursos naturals, petjada de carboni, eficiència energètica, residus, biodiversitat</li>
+          <li><strong>Social:</strong> condicions laborals, diversitat i inclusió, comunitat, drets humans</li>
+          <li><strong>Governança:</strong> ètica, transparència, anticorrupció, presa de decisions</li>
+        </ul>
+        <p>Es prioritzen amb una <em>matriu de materialitat</em>.</p>
+      </article>
+
+      <article class="reveal c-p3">
+        <h3>Indicadors de seguiment</h3>
+        <p>Mesures que permeten saber si el pla funciona:</p>
+        <ul>
+          <li><strong>Ambientals:</strong> emissions de CO₂, % d'energia renovable, residus reciclats, consum d'aigua</li>
+          <li><strong>Socials:</strong> % d'empleats formats, programes de RSC, diversitat, satisfacció</li>
+          <li><strong>Econòmics i de governança:</strong> % d'inversió sostenible, compliment normatiu, estalvi energètic</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Exemple d'indicadors: pla de SEAT</h2>
+      <p>El material del mòdul presenta com a exemple real el pla d'una empresa de l'automoció. Aquests són els objectius per al 2025:</p>
+      <ul class="xifres">
+        <li><strong>−50 %</strong><span>emissions de CO₂ per vehicle (2023: −30 %)</span></li>
+        <li><strong>100 %</strong><span>energia renovable a les plantes (2023: 85 %)</span></li>
+        <li><strong>95 %</strong><span>residus reciclats (2023: 80 %)</span></li>
+      </ul>
+      <div class="taula-scroll">
+        <table>
+          <caption>Indicadors clau per al 2025</caption>
+          <thead>
+            <tr>
+              <th scope="col">Indicador</th>
+              <th scope="col">Objectiu 2025</th>
+              <th scope="col">2023 (dades actuals)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Reducció d'emissions de CO₂ per vehicle</td><td>-50 %</td><td>-30 %</td></tr>
+            <tr><td>Energia renovable a plantes de producció</td><td>100 %</td><td>85 %</td></tr>
+            <tr><td>Vehicles elèctrics o híbrids venuts</td><td>50 % del total</td><td>25 %</td></tr>
+            <tr><td>Consum d'aigua per vehicle produït</td><td>-20 %</td><td>-10 %</td></tr>
+            <tr><td>Residus reciclats</td><td>95 %</td><td>80 %</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <aside>
+      <h3>Cas pràctic proper a nosaltres</h3>
+      <p>
+        El material inclou el cas de <strong>3D Innovate, SL</strong>, una empresa de models 3D i
+        entorns virtuals amb 50 treballadors. Els seus aspectes materials són, per exemple,
+        el gran consum energètic dels renderitzats i dels servidors al núvol, i la dependència
+        de maquinari amb un cicle de vida curt: problemes molt semblants als d'una empresa de
+        desenvolupament web.
+      </p>
+    </aside>
+
+    <p class="font">Font: material «Sostenibilitat aplicada als sectors productius», Departament d'Educació i Formació Professional (apartat 4).</p>
+  </main>
+
+  <footer>
+    <img class="logo-centre" src="img/logo-montsia.png" alt="Logotip de l'Institut Montsià, 50 anys" width="160" height="66">
+    <p class="centre"><strong>Institut Montsià</strong> · CFGS Desenvolupament d'Aplicacions Web (DAW1)</p>
+    <p>Llenguatges de marques i sistemes de gestió d'informació (MP0373) · Sostenibilitat aplicada al sistema productiu (MP1708)</p>
+    <p class="autors">Abdellah Zerouali El hariri · Soufiane Zemmah</p>
+    <p><a class="boto-pdf" href="https://drive.google.com/file/d/1Rw1FOQGXBtgNrT9P6ouosKtyHUCtFdE8/view?usp=sharing" target="_blank" rel="noopener">Material del mòdul (PDF)</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sectors d'FP i sostenibilitat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rye&amp;family=Zilla+Slab:wght@500;700&amp;display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="cap">
+      <svg class="logo" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20 4C10 4 4 9 4 15c0 1.6.5 3 1.3 4.2C6.5 13.5 10 10 15 8c-4 3-6.5 6.5-7.3 11.6C9 20.5 10.4 21 12 21c6 0 9-6 8-17z" fill="currentColor"/>
+      </svg>
+      <h1>Sectors d'FP</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="sectors-fp.html" aria-current="page">Sectors d'FP</a></li>
+        <li><a href="pla-sostenibilitat.html">Pla de Sostenibilitat</a></li>
+        <li>
+          <button id="tema" type="button" aria-label="Canviar entre mode clar i fosc">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg>
+          </button>
+        </li>
+        <li>
+          <button id="so" type="button" aria-label="Activar o silenciar els sons" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><g class="ones"><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 6a9 9 0 0 1 0 12"/></g><path class="barra" d="M16 9l5 6M21 9l-5 6"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>La sostenibilitat a cada sector productiu</h2>
+      <p>
+        La formació professional (FP) és una peça clau de la transició cap a un model econòmic
+        més sostenible: els professionals que surten dels cicles formatius actuen directament
+        sobre els processos productius, la gestió de les empreses i la innovació.
+        Aquests són els sis sectors que treballem i com hi pot entrar la sostenibilitat.
+      </p>
+      <p class="pista">Passa el cursor per sobre d'un sector, o fes clic al seu títol, per veure'n el detall.</p>
+    </section>
+
+    <section class="targetes desplegables" aria-label="Sectors productius">
+      <article class="reveal c-agro desplegable">
+        <span class="icona-svg" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 22V11"/><path d="M12 11C12 7 9 4.5 5 4.5c0 4 2 6.5 7 6.5z"/><path d="M12 14c0-3.5 3-5.5 7-5.5 0 4-2 6.5-7 6.5z"/></svg>
+        </span>
+        <h3>
+          <button type="button" class="obre" aria-expanded="false" aria-controls="txt-agro">
+            Agroalimentari<span class="fletxa" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="detall" id="txt-agro">
+          <div><p>Als cicles de Producció Agropecuària s'aprenen tècniques d'agricultura regenerativa, ús eficient de l'aigua i gestió de residus orgànics per reduir l'impacte ambiental de l'activitat agrícola.</p></div>
+        </div>
+      </article>
+
+      <article class="reveal c-text desplegable">
+        <span class="icona-svg" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M8 3 3 6l2 4 3-1v12h8V9l3 1 2-4-5-3a4 4 0 0 1-8 0z"/></svg>
+        </span>
+        <h3>
+          <button type="button" class="obre" aria-expanded="false" aria-controls="txt-text">
+            Manufacturer<span class="fletxa" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="detall" id="txt-text">
+          <div><p>Als cicles de Tèxtil, Confecció i Pell es formen professionals en l'ús de materials reciclats, tintes ecològiques i tècniques de producció amb menys consum d'aigua i energia.</p></div>
+        </div>
+      </article>
+
+      <article class="reveal c-metall desplegable">
+        <span class="icona-svg" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M3 17v-4l2-5h14l2 5v4"/><path d="M3 17h3M18 17h3M5 13h14"/><circle cx="7.5" cy="17" r="1.8"/><circle cx="16.5" cy="17" r="1.8"/></svg>
+        </span>
+        <h3>
+          <button type="button" class="obre" aria-expanded="false" aria-controls="txt-metall">
+            Indústria del metall i mobilitat<span class="fletxa" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="detall" id="txt-metall">
+          <div><p>Als cicles de Transport i Manteniment de Vehicles es formen tècnics en manteniment de vehicles elèctrics i híbrids i en sistemes de reducció d'emissions en motors de combustió.</p></div>
+        </div>
+      </article>
+
+      <article class="reveal c-constr desplegable">
+        <span class="icona-svg" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 21V5l8-3v19"/><path d="m12 8 8 3v10"/><path d="M2 21h20"/><path d="M8 9h2M8 13h2M8 17h2M15 14h2M15 18h2"/></svg>
+        </span>
+        <h3>
+          <button type="button" class="obre" aria-expanded="false" aria-controls="txt-constr">
+            Construcció<span class="fletxa" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="detall" id="txt-constr">
+          <div><p>Als cicles d'Edificació i Obra Civil s'imparteixen coneixements de construcció sostenible, materials ecològics, aïllament tèrmic eficient i certificacions ambientals d'edificis.</p></div>
+        </div>
+      </article>
+
+      <article class="reveal c-digital desplegable">
+        <span class="icona-svg" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </span>
+        <h3>
+          <button type="button" class="obre" aria-expanded="false" aria-controls="txt-digital">
+            Transformació digital<span class="fletxa" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="detall" id="txt-digital">
+          <div><p>Als cicles d'Informàtica i Comunicacions, els estudiants poden desenvolupar aplicacions per monitorar el consum energètic, optimitzar processos empresarials i reduir el consum de paper amb la digitalització.</p></div>
+        </div>
+      </article>
+
+      <article class="reveal c-energia desplegable">
+        <span class="icona-svg" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+        </span>
+        <h3>
+          <button type="button" class="obre" aria-expanded="false" aria-controls="txt-energia">
+            Energia i sostenibilitat<span class="fletxa" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="detall" id="txt-energia">
+          <div><p>Als cicles d'Energia i Aigua es formen especialistes en energies renovables, instal·lacions fotovoltaiques i sistemes de gestió intel·ligent de l'aigua.</p></div>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <h2>Comparativa dels sectors</h2>
+      <div class="taula-scroll">
+        <table>
+          <caption>Cicles formatius i pràctiques sostenibles per sector</caption>
+          <thead>
+            <tr>
+              <th scope="col">Sector</th>
+              <th scope="col">Cicles formatius</th>
+              <th scope="col">Pràctica sostenible</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Agroalimentari</th><td>Producció Agropecuària</td><td>Agricultura regenerativa, ús eficient de l'aigua i gestió de residus orgànics</td></tr>
+            <tr><th scope="row">Manufacturer</th><td>Tèxtil, Confecció i Pell</td><td>Materials reciclats, tintes ecològiques i menys consum d'aigua i energia</td></tr>
+            <tr><th scope="row">Indústria del metall i mobilitat</th><td>Transport i Manteniment de Vehicles</td><td>Manteniment de vehicles elèctrics i híbrids; reducció d'emissions en motors de combustió</td></tr>
+            <tr><th scope="row">Construcció</th><td>Edificació i Obra Civil</td><td>Construcció sostenible, materials ecològics, aïllament tèrmic i certificacions</td></tr>
+            <tr><th scope="row">Transformació digital</th><td>Informàtica i Comunicacions</td><td>Aplicacions per monitorar el consum energètic i digitalització per reduir paper</td></tr>
+            <tr><th scope="row">Energia i sostenibilitat</th><td>Energia i Aigua</td><td>Energies renovables, instal·lacions fotovoltaiques i gestió intel·ligent de l'aigua</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <aside>
+      <h3>I nosaltres, com a desenvolupadors web?</h3>
+      <p>
+        El sector de la <strong>transformació digital</strong> és el nostre: una web ben optimitzada
+        (imatges lleugeres, poc codi, hostatge eficient) consumeix menys energia, i les aplicacions
+        que monitoren consums o estalvien paper ajuden altres sectors a ser més sostenibles.
+      </p>
+    </aside>
+
+    <p class="font">Font: material «Sostenibilitat aplicada als sectors productius», Departament d'Educació i Formació Professional (apartat 3.2.2).</p>
+  </main>
+
+  <footer>
+    <img class="logo-centre" src="img/logo-montsia.png" alt="Logotip de l'Institut Montsià, 50 anys" width="160" height="66">
+    <p class="centre"><strong>Institut Montsià</strong> · CFGS Desenvolupament d'Aplicacions Web (DAW1)</p>
+    <p>Llenguatges de marques i sistemes de gestió d'informació (MP0373) · Sostenibilitat aplicada al sistema productiu (MP1708)</p>
+    <p class="autors">Abdellah Zerouali El hariri · Soufiane Zemmah</p>
+    <p><a class="boto-pdf" href="https://drive.google.com/file/d/1Rw1FOQGXBtgNrT9P6ouosKtyHUCtFdE8/view?usp=sharing" target="_blank" rel="noopener">Material del mòdul (PDF)</a></p>
+  </footer>
+</body>
+</html>
